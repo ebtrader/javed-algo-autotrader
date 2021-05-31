@@ -1,6 +1,5 @@
 from collections import deque
 import pandas as pd
-import pandas_ta as ta
 
 class WMA:
     def __init__(self, periods: int):
@@ -20,8 +19,7 @@ class WMA:
         # self.wma = wma_total / self.period_sum
         data = list(self.dq)
         df = pd.DataFrame(data, columns=['price'])
-        # df['sma'] = df['price'].rolling(window=self.periods).mean()
-        df['sma'] = ta.sma(df['price'], length=self.periods)
+        df['sma'] = df['price'].rolling(window=self.periods).mean()
         self.wma = df['sma'].iloc[-1]
         self.dq.popleft()
 

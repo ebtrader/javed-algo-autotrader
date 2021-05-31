@@ -1,6 +1,4 @@
 from collections import deque
-import pandas as pd
-import pandas_ta as ta
 
 class WMA:
     def __init__(self, periods: int):
@@ -14,15 +12,10 @@ class WMA:
     def calc_wma(self):
         weight = 1
         wma_total = 0
-        # for price in self.dq:
-        #    wma_total += price * weight
-        #    weight = 1
-        # self.wma = wma_total / self.period_sum
-        data = list(self.dq)
-        df = pd.DataFrame(data, columns=['price'])
-        # df['sma'] = df['price'].rolling(window=self.periods).mean()
-        df['sma'] = ta.sma(df['price'], length=self.periods)
-        self.wma = df['sma'].iloc[-1]
+        for price in self.dq:
+            wma_total += price * weight
+            weight = 1
+        self.wma = wma_total / self.period_sum
         self.dq.popleft()
 
     def update_signal(self, price: float):

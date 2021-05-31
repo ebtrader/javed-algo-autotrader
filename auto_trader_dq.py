@@ -18,7 +18,6 @@ from ibapi.execution import Execution
 
 import strategies
 
-
 CONTRACT_ES = Contract()
 CONTRACT_ES.symbol = "ES"
 CONTRACT_ES.secType = "FUT"
@@ -56,7 +55,7 @@ KNOWN_CONTRACTS = {
 
 REQ_ID_TICK_BY_TICK_DATE = 1
 
-NUM_PERIODS = 3
+NUM_PERIODS = 5
 ORDER_QUANTITY = 1
 
 

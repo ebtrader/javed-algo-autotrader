@@ -18,7 +18,6 @@ from ibapi.execution import Execution
 
 import strategies
 
-
 CONTRACT_ES = Contract()
 CONTRACT_ES.symbol = "ES"
 CONTRACT_ES.secType = "FUT"
@@ -182,8 +181,7 @@ class TestApp(EWrapper, EClient):
               "Time:", datetime.datetime.fromtimestamp(time).strftime("%Y%m%d %H:%M:%S"),
               "Price:", "{:.2f}".format(price),
               "Size:", size,
-              "WMA:",  "{:.2f}".format(self.strategy.wma),
-              "Current_List:", self.strategy.dq)
+              "WMA:",  "{:.2f}".format(self.strategy.wma))
         if self.tick_count % self.ticks_per_candle == self.ticks_per_candle-1:
             self.strategy.update_signal(price)
             self.checkAndSendOrder()
