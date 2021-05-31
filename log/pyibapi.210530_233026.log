@@ -1,0 +1,16 @@
+(MainThread) 210530_23:30:26.261 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfuture
+(MainThread) 210530_23:30:26.265 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfarm
+(MainThread) 210530_23:30:26.268 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:euhmds
+(MainThread) 210530_23:30:26.270 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:fundfarm
+(MainThread) 210530_23:30:26.271 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:ushmds
+(MainThread) 210530_23:30:26.271 ERROR wrapper.py:56 ERROR -1 2158 Sec-def data farm connection is OK:secdefil
+(MainThread) 210530_23:30:48.091 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:30:53.289 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:30:59.896 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:31:08.075 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:31:25.990 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:32:13.213 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:33:21.621 ERROR wrapper.py:56 ERROR -1 2157 Sec-def data farm connection is broken:secdefil
+(MainThread) 210530_23:34:27.586 ERROR wrapper.py:56 ERROR -1 2158 Sec-def data farm connection is OK:secdefil
+(MainThread) 210530_23:36:33.852 ERROR wrapper.py:56 ERROR 30 2168 Warning: The 'EtradeOnly' order attribute is not supported.
+(MainThread) 210530_23:36:33.854 ERROR wrapper.py:56 ERROR 30 2169 Warning: The 'FirmQuoteOnly' order attribute is not supported.

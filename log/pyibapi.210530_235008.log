@@ -1,0 +1,18 @@
+(MainThread) 210530_23:50:08.665 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfarm
+(MainThread) 210530_23:50:08.676 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:ushmds
+(MainThread) 210530_23:50:08.678 ERROR wrapper.py:56 ERROR -1 2158 Sec-def data farm connection is OK:secdefil
+(MainThread) 210530_23:51:09.320 ERROR wrapper.py:56 ERROR -1 2103 Market data farm connection is broken:usfuture
+(MainThread) 210530_23:51:29.433 ERROR wrapper.py:56 ERROR -1 2103 Market data farm connection is broken:usfuture
+(MainThread) 210530_23:51:29.799 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfuture
+(MainThread) 210530_23:59:57.137 ERROR wrapper.py:56 ERROR 31 2168 Warning: The 'EtradeOnly' order attribute is not supported.
+(MainThread) 210530_23:59:57.138 ERROR wrapper.py:56 ERROR 31 2169 Warning: The 'FirmQuoteOnly' order attribute is not supported.
+(MainThread) 210531_00:01:48.116 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:01:50.712 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:ushmds
+(MainThread) 210531_00:02:48.289 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:02:49.120 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:ushmds
+(MainThread) 210531_00:03:33.454 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:03:38.632 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:03:43.773 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:03:53.016 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:04:16.589 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds
+(MainThread) 210531_00:05:03.816 ERROR wrapper.py:56 ERROR -1 2105 HMDS data farm connection is broken:ushmds

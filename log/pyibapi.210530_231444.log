@@ -1,0 +1,6 @@
+(MainThread) 210530_23:14:44.283 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfuture
+(MainThread) 210530_23:14:44.290 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfarm
+(MainThread) 210530_23:14:44.290 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:euhmds
+(MainThread) 210530_23:14:44.291 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:fundfarm
+(MainThread) 210530_23:14:44.292 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:ushmds
+(MainThread) 210530_23:14:44.293 ERROR wrapper.py:56 ERROR -1 2158 Sec-def data farm connection is OK:secdefil

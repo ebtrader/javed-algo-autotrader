@@ -1,0 +1,13 @@
+(MainThread) 210531_00:21:31.848 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfuture
+(MainThread) 210531_00:21:31.854 ERROR wrapper.py:56 ERROR -1 2104 Market data farm connection is OK:usfarm
+(MainThread) 210531_00:21:31.854 ERROR wrapper.py:56 ERROR -1 2106 HMDS data farm connection is OK:ushmds
+(MainThread) 210531_00:21:31.855 ERROR wrapper.py:56 ERROR -1 2158 Sec-def data farm connection is OK:secdefil
+(MainThread) 210531_00:23:48.779 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:23:51.714 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:23:56.718 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:24:01.745 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:24:06.717 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:24:07.872 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:24:16.716 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:24:26.003 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
+(MainThread) 210531_00:24:41.719 ERROR wrapper.py:56 ERROR -1 1100 Connectivity between IB and Trader Workstation has been lost.
