@@ -178,13 +178,15 @@ class TestApp(EWrapper, EClient):
                           specialConditions: str):
         print("TickByTickAllLast. ",
               "Candle:", str(self.tick_count // self.ticks_per_candle + 1).zfill(3),
-              "Period:", str(self.tick_count % self.ticks_per_candle + 1).zfill(3),
+              "Tick:", str(self.tick_count % self.ticks_per_candle + 1).zfill(3),
               "Time:", datetime.datetime.fromtimestamp(time).strftime("%Y%m%d %H:%M:%S"),
               "Price:", "{:.2f}".format(price),
               "Size:", size,
               "WMA:",  "{:.2f}".format(self.strategy.wma),
               "High", self.strategy.max_value,
-              "Tick_List:", self.strategy.dq1,
+              "Low", self.strategy.min_value,
+              "ATR", self.strategy.atr_value,
+              #"Tick_List:", self.strategy.dq1,
               "Current_List:", self.strategy.dq)
         if self.tick_count % self.ticks_per_candle == self.ticks_per_candle-1:
             self.strategy.update_signal(price)

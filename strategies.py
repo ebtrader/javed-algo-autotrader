@@ -13,6 +13,8 @@ class WMA:
         self.signal = "NONE"
         self.high = 0
         self.max_value = 0
+        self.min_value = 0
+        self.atr_value = 0
         self.dq1 = deque()
         self.i = 0
 
@@ -46,6 +48,8 @@ class WMA:
     def find_high(self, price: float):
         self.dq1.append(price)
         self.max_value = max(self.dq1)
+        self.min_value = min(self.dq1)
+        self.atr_value = self.max_value - self.min_value
         self.i += 1
         if self.i > self.ticks:
             self.dq1.popleft()
