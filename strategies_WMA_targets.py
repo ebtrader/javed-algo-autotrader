@@ -15,9 +15,10 @@ class WMA:
         self.max_value = 0
         self.min_value = 0
         self.atr_value = 0
-        self.wma_target = 0
         self.target_up = 0
         self.target_down = 0
+        self.up_wma = 0
+        self.down_wma = 0
         self.dq1 = deque()
         self.i = 0
 
@@ -46,11 +47,10 @@ class WMA:
         if prev_wma != 0:
             if self.wma > prev_wma:
                 diff = self.wma - prev_wma
-                self.wma_target = self.wma + diff
-
+                self.up_wma = self.wma + diff
             elif self.wma < prev_wma:
                 diff = prev_wma - self.wma
-                self.wma_target = self.wma - diff
+                self.down_wma = self.wma - diff
 
         if prev_wma != 0:
             if self.wma > prev_wma:
@@ -59,13 +59,12 @@ class WMA:
                 self.signal = "SHRT"
 
     def find_high(self, price: float):
-        multiplier = 0.5
         self.dq1.append(price)
         self.max_value = max(self.dq1)
         self.min_value = min(self.dq1)
         self.atr_value = self.max_value - self.min_value
-        self.target_up = self.wma_target + self.atr_value * multiplier
-        self.target_down = self.wma_target - self.atr_value * multiplier
+        self.target_up = self.wma + self.atr_value
+        self.target_down = self.wma - self.atr_value
         self.i += 1
         if self.i > self.ticks:
             self.dq1.popleft()

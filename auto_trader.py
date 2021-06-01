@@ -56,7 +56,7 @@ KNOWN_CONTRACTS = {
 
 REQ_ID_TICK_BY_TICK_DATE = 1
 
-NUM_PERIODS = 4
+NUM_PERIODS = 9
 ORDER_QUANTITY = 1
 
 
@@ -182,12 +182,16 @@ class TestApp(EWrapper, EClient):
               "Time:", datetime.datetime.fromtimestamp(time).strftime("%Y%m%d %H:%M:%S"),
               "Price:", "{:.2f}".format(price),
               "Size:", size,
+              "Up Target", "{:.2f}".format(self.strategy.target_up),
+              "Down Target", "{:.2f}".format(self.strategy.target_down),
               "WMA:",  "{:.2f}".format(self.strategy.wma),
-              "High", self.strategy.max_value,
-              "Low", self.strategy.min_value,
+              "WMA_Target", "{:.2f}".format(self.strategy.wma_target),
+              # "High", self.strategy.max_value,
+              # "Low", self.strategy.min_value,
               "ATR", self.strategy.atr_value,
+              self.strategy.signal)
               #"Tick_List:", self.strategy.dq1,
-              "Current_List:", self.strategy.dq)
+              # "Current_List:", self.strategy.dq)
         if self.tick_count % self.ticks_per_candle == self.ticks_per_candle-1:
             self.strategy.update_signal(price)
             self.checkAndSendOrder()
