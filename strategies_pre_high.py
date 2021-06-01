@@ -3,17 +3,13 @@ import pandas as pd
 from finta import TA
 
 class WMA:
-    def __init__(self, periods: int, ticks: int):
+    def __init__(self, periods: int):
         self.periods = periods
-        self.ticks = ticks
         self.period_sum = periods
         self.n = 0
         self.dq = deque()
         self.wma = 0
         self.signal = "NONE"
-        self.high = 0
-        self.dq1 = deque()
-        self.i = 0
 
     def calc_wma(self):
         weight = 1
@@ -41,11 +37,3 @@ class WMA:
                 self.signal = "LONG"
             elif self.wma < prev_wma:
                 self.signal = "SHRT"
-
-    def find_high(self, price: float):
-        self.dq1.append(price)
-        self.i += 1
-        if self.i > self.ticks:
-            self.dq1.popleft()
-
-

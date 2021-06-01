@@ -91,7 +91,7 @@ class TestApp(EWrapper, EClient):
         self.started = False
         self.done = False
         self.position = 0
-        self.strategy = strategies.WMA(NUM_PERIODS, ticks_per_candle)
+        self.strategy = strategies.WMA(NUM_PERIODS)
         self.last_signal = "NONE"
         self.pending_order = False
         self.tick_count = 0
@@ -183,14 +183,11 @@ class TestApp(EWrapper, EClient):
               "Price:", "{:.2f}".format(price),
               "Size:", size,
               "WMA:",  "{:.2f}".format(self.strategy.wma),
-              "High:", self.strategy.dq1,
               "Current_List:", self.strategy.dq)
         if self.tick_count % self.ticks_per_candle == self.ticks_per_candle-1:
             self.strategy.update_signal(price)
             self.checkAndSendOrder()
-        self.strategy.find_high(price)
         self.tick_count += 1
-
 
     @iswrapper
     def orderStatus(self, orderId: OrderId, status: str, filled: float,
