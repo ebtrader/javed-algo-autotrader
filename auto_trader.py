@@ -183,7 +183,8 @@ class TestApp(EWrapper, EClient):
               "Price:", "{:.2f}".format(price),
               "Size:", size,
               "WMA:",  "{:.2f}".format(self.strategy.wma),
-              "High:", self.strategy.dq1,
+              "High", self.strategy.max_value,
+              "Tick_List:", self.strategy.dq1,
               "Current_List:", self.strategy.dq)
         if self.tick_count % self.ticks_per_candle == self.ticks_per_candle-1:
             self.strategy.update_signal(price)
