@@ -25,7 +25,7 @@ CONTRACT_NQ.symbol = "NQ"
 CONTRACT_NQ.secType = "FUT"
 CONTRACT_NQ.exchange = "GLOBEX"
 CONTRACT_NQ.currency = "USD"
-CONTRACT_NQ.lastTradeDateOrContractMonth = "202009"
+CONTRACT_NQ.lastTradeDateOrContractMonth = "202106"
 
 CONTRACT_SPY = Contract()
 CONTRACT_SPY.symbol = "SPY"
